@@ -10,6 +10,7 @@ from kivy.logger import Logger
 
 try:
     from flask import Flask, render_template_string, make_response
+    Logger.info('WebDebugger: Started. Listening on http://localhost:5000/')
 except ImportError:
     Logger.error('WebDebugger: unable to import Flask. Install it!')
     raise
